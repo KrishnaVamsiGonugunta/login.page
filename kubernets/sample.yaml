@@ -1,0 +1,12 @@
+#sample yaml script
+
+apiVersion: v1
+kind: pod
+metadata: 
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
