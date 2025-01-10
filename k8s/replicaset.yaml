@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: Replicaset-example
+  name: replicaset-example
 spec:
   # modify replicas according to your case
   replicas: 3
