@@ -1,0 +1,21 @@
+appVersion: v1
+kind: Replicaset
+metadata:
+  name: replicaset-example
+  labels:
+    app: replicaset
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: replicaset
+  template:
+    metadata: 
+      labels:
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+  
